@@ -1,23 +1,23 @@
-# TÍTULO DO PROJETO
+# CONTRO DE REVENDAS PARA AUTONOMOS
 
-`CURSO`
+`CURSO: Analise e Desenvolvimento de Sistemas`
 
-`DISCIPLINA`
+`DISCIPLINA DE PROJETOS`
 
-`SEMESTRE`
+`2º SEMESTRE - EIXO 2`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Desenvolvimento de uma aplicação para controle de estoque, fluxo de caixa, cadastro de lcientes e fornecedores para revendedores autonomos.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* João Victor da Conceição Martins
+* Leidirene Rodrigues da Silva Marques
+* Luana Grazielle Martins da Silva Fernandes
+* Raphael Ventura Muniz Lima
 
 ## Orientador
 
-* Nome completo do professor 1
+* Bernardo Jeunon de Alencar
 
 ## Instruções de utilização
 
