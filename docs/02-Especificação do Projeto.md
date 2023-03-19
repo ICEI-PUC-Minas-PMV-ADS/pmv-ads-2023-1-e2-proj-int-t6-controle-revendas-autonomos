@@ -42,15 +42,25 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| O site deve permitir ao usuário (microempresa/autonômo) dados do estoque e compartilhar-o | ALTA | 
+|RF-002| O site deve permitir o cliente gerenciar o estoque ( cadastrar novo produto, alterar produto, remover produto)  | ALTA |
+|RF-003| O sistema deve permitir o gerenciamento do perfil ( alterar dados do perfil )  | ALTA |
+|RF-004| O site deve permitir o cliente gerenciar os dados do fornecedor  | MÉDIA |
+|RF-005| O sistema deve permitir a emissão de um relatório geral do estoque  | MÉDIO |
+|RF-006| O sistema deve permitir a emissão de um relatório reposição de estoque  | MÉDIA |
+|RF-007| O sistema deve verificar login válido  | MÉDIA |
+
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| O site deve ser publicado em um ambiente acessível publicamente na Internet (Repl.it, GitHub Pages, Heroku) | MÉDIA | 
+|RNF-002| O site deverá ser responsivo permitindo a visualização em um celular de forma adequada |  ALTA |
+|RNF-003| O site deve ter bom nível de contraste entre os elementos da tela em conformidade  |  MÉDIA | 
+|RNF-004| O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge) |  ALTA | 
+
+
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
@@ -85,4 +95,4 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 
 ## Diagrama de Casos de Uso
 
-<img src="imag/../img/DiagramaDeCasoUso.jpg">
+![Imagem Diagrama Caso de Uso](img/DiagramaCasoUso.jpeg)
