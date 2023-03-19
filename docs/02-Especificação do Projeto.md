@@ -102,7 +102,10 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de
 > - [Astah](https://astah.net/)
 > - [Diagrams](https://app.diagrams.net/)
 
+
+
+
 ## Vídeo - Apresentação
 
-[![Watch the video](https://youtu.be/bnuPUccGhoY/maxresdefault.jpg)](https://youtu.be/bnuPUccGhoY)
+[![Watch the video](https://youtu.be/bnuPUccGhoY.jpg)](https://youtu.be/bnuPUccGhoY)
 
