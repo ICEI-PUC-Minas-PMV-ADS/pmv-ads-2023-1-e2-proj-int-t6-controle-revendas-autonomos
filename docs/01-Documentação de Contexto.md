@@ -16,12 +16,16 @@ Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thin
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+Objetivo geral: 
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+> -  A finalidade do projeto é desenvolver uma aplicação que crie um meio que possibilite uma melhor organização de gestão de carteira. 
+  
+Objetivos específicos:
+
+ > - Permitir um melhor controle de estoque.
+ > - Permitir um completo  controle de fornecedores.
+ > - Permitir um rápido controle de produtos.
+ > - Permitir uma garantia no controle de contas a pagar e receber.
 
 ## Justificativa
 
