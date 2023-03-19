@@ -1,6 +1,10 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+ No Brasil, MEIs representam quase 70% das empresas em atividade no Brasil. Já o número de trabalhadores autonâmos chega em 25,7 milhões, sabendo disso,
+é muito comum acontecer de pessoas que possuem uma baixa renda não conseguirem arcar com os gastos necessários para ter um software de controle de boa qualidade.
+Logo a existência de aplicações gratuitas que ajude pequenos trabalhadores vem se tornando mais necessária a cada dia. 
+ 
+
 
 ## Problema
 Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
