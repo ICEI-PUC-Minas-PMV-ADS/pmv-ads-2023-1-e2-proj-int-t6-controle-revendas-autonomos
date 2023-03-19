@@ -1,26 +1,26 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
 Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+|Irene Rodrigues| ![Persona 1](img/Personas/Persona1.jpg) |
+|-----------------------|-|
+|Idade:|61|
+|Ocupação:| Empreendedora Mary Kay |
+|Aplicativos:| Instagram, Whatsapp|
+|Motivações | Sempre foi apaixonada por produtos de beleza e gosta de transformar o bem estar das pessoas atraves do conhecimento de seus produtos|
+|Frustrações | Tem dificuldade em lembrar tudo que está em estoque |
+|Ferramentas que usa na gestão | Anotações em um caderninho |
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
-
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+|Deidison Tadeu| ![Persona 2](img/Personas/Persona2.jpeg) |
+|-----------------------|-|
+|Idade:|33|
+|Ocupação:| Microempresario de Produtos de Limpeza |
+|Aplicativos:| Whatsapp |
+|Motivações | Após ficar desempregado, tive a oportunidade de revender produtos de limpeza e abracei|
+|Frustrações | Por fazer o controle em notas e caderno, algumas informações acabam se perdendo ou se misturando|
+|Ferramentas que usa na gestão | Anotações em um caderninho e acompanhamento com notas de fornecedores|
 
 ## Histórias de Usuários
 
@@ -31,6 +31,9 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Irene Rodrigues | Registrar minhas aquisições de materias | Não esquecer o que ja foi ou precisa ser adquirido |
 |Deidson Tadeu | Relatorio de estoque | Permitir que possam administrar novas aquisições |
 |Deidson Tadeu |Resumo do que tenho em estoque e quantidades|Controlando as vendas de mercadorias dentro e fora da empresa|
+|Deidson Tadeu | Cadastrar cada produto vinculado ao seu fornecimento|Saber qual produto pertence determinado forncedor|
+|Irene Rodrigues | Poder compartilhar meu estoque | Conseguir uma venda sem a necessidade de me lembrar de tudo que possuo |
+
 
 ## Requisitos
 
