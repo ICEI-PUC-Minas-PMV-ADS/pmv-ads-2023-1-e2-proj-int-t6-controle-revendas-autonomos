@@ -48,8 +48,14 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| O site deve permitir ao usuário (microempresa/autonômo) dados do estoque e compartilhar-o | ALTA | 
+|RF-002| O site deve permitir o cliente gerenciar o estoque ( cadastrar novo produto, alterar produto, remover produto)  | ALTA |
+|RF-003| O sistema deve permitir o gerenciamento do perfil ( alterar dados do perfil )  | ALTA |
+|RF-004| O site deve permitir o cliente gerenciar os dados do fornecedor  | MÉDIA |
+|RF-005| O sistema deve permitir a emissão de um relatório geral do estoque  | MÉDIO |
+|RF-006| O sistema deve permitir a emissão de um relatório reposição de estoque  | MÉDIA |
+|RF-007| O sistema deve verificar login válido  | MÉDIA |
+
 
 ### Requisitos não Funcionais
 
