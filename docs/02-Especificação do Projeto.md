@@ -26,7 +26,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR` |
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR` |
 |--------------------|------------------------------------|----------------------------------------|
 |Irene Rodrigues | Registrar minhas aquisições de materias | Não esquecer o que ja foi ou precisa ser adquirido |
 |Deidson Tadeu | Relatorio de estoque | Permitir que possam administrar novas aquisições |
