@@ -75,3 +75,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 ## Diagrama de Casos de Uso
 
 ![Imagem Diagrama Caso de Uso](img/DiagramaCasoUso.jpeg)
+
+
+## Vídeo - Apresentação
+
+[![Watch the video](https://youtu.be/bnuPUccGhoY.jpg)](https://youtu.be/bnuPUccGhoY)
