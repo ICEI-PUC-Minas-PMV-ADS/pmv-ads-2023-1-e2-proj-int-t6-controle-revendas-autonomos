@@ -6,7 +6,7 @@
 
 `2º SEMESTRE - EIXO 2`
 
-Desenvolvimento de uma aplicação para controle de estoque, fluxo de caixa, cadastro de lcientes e fornecedores para revendedores autonomos.
+Desenvolvimento de uma aplicação para controle de estoque, cadastro de lcientes e fornecedores para trabalhadores autonomos.
 
 ## Integrantes
 
