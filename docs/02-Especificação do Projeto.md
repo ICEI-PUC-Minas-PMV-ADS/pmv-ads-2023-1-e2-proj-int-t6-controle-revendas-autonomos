@@ -9,7 +9,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 |Idade:|61|
 |Ocupação:| Empreendedora Mary Kay |
 |Aplicativos:| Instagram, Whatsapp|
-|Motivações | Sempre foi apaixonada por produtos de beleza e gosta de transformar o bem estar das pessoas atraves do conhecimento de seus produtos. |
+|Motivações | Sempre foi apaixonada por produtos de beleza e gosta de transformar o bem estar das pessoas atraves do conhecimento de seus produtos|
 |Frustrações | Tem dificuldade em lembrar tudo que está em estoque |
 |Ferramentas que usa na gestão | Anotações em um caderninho |
 
@@ -18,7 +18,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 |Idade:|33|
 |Ocupação:| Microempresario de Produtos de Limpeza |
 |Aplicativos:| Whatsapp |
-|Motivações | Após ficar desempregado, tive a oportunidade de revender produtos de limpeza e abracei. |
+|Motivações | Após ficar desempregado, tive a oportunidade de revender produtos de limpeza e abracei|
 |Frustrações | Por fazer o controle em notas e caderno, algumas informações acabam se perdendo ou se misturando|
 |Ferramentas que usa na gestão | Anotações em um caderninho e acompanhamento com notas de fornecedores|
 
@@ -31,7 +31,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
 |Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
+Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento. 
 
 
 ## Requisitos
