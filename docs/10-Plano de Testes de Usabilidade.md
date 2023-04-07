@@ -1,15 +1,20 @@
 # Plano de Testes de Usabilidade
 
-Os testes de usabilidade permitem avaliar a qualidade da interface com o usuário da aplicação interativa.
 
-Um plano de teste de usabilidade deverá conter: o detalhamento dos objetivos (em função dos requisitos levantados/implementados), dos critérios que serão utilizados para a seleção dos participantes, dos procedimentos a serem adotados pelos condutores de teste (por exemplo: os testes serão presenciais ou remotos? o método será observação direta, medição ou avaliação?), das tarefas a serem executadas, dos dados a serem coletados (quantidade de cliques, número de erros, tempo etc.), a ordem de execução das tarefas e das etapas da sessão de teste, recursos demandados, métricas coletadas etc.
+### O detalhamento dos objetivos 
+- O objetivo do teste de usabilidade é saber se todos os requisitos que foram levantados durante o projeto estão funcionando corretamente e de forma com que o usuário consiga navegar por dentro do site tranquilamente e sem dificuldades.
 
-Para cada voluntário do teste, é fundamental coletar e apresentar todos os dados/métricas previamente definidos, mas não se esqueça: atendendo à LGPD (Lei Geral de Proteção de Dados), nenhum dado sensível, que permita identificar o voluntário, deverá ser apresentado).
+### Critérios que serão utilizados para a seleção dos participantes
+- Não haverá critérios para a seleção dos participantes, enviaremos um link do site junto com um formulário com várias questões abertas para que os participantes possam passar de uma forma mais clara como foi a sua experiência com o site.
 
-As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
+### Quais dados serão coletados no formulário?
+- Os dados coletados serão todos que envolvem a navegação do usuário pelo site, no próprio formulário haverá uma parte em que o participante poderá escrever sobre todos os erros de navegação que ocorreu no site durante a sua experiência.
 
-> **Links Úteis**:
-> - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
-> - [Teste de usabilidade: tudo o que você precisa saber! | by Jon Vieira | Aela.io | Medium](https://medium.com/aela/teste-de-usabilidade-o-que-voc%C3%AA-precisa-saber-39a36343d9a6/)
-> - [Planejando testes de usabilidade: o que (e o que não) fazer | iMasters](https://imasters.com.br/design-ux/planejando-testes-de-usabilidade-o-que-e-o-que-nao-fazer/)
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+### Os testes serão presenciais ou remotos?
+- Todos os testes serão realizados de forma remota pelo formulário de perguntas.
+
+### O que acontecerá com os dados coletados?
+- Todos os dados coletados serão colocados no registro de teste de usabilidade.
+
+
+
