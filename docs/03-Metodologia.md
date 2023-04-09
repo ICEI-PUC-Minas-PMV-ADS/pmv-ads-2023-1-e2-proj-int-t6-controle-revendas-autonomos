@@ -62,7 +62,7 @@ As ferramentas empregadas no projeto são:
 
 - Editor de código.
 - Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
+- Ferramentas de desenho de tela (_wireframe_): [Figma](https://www.figma.com/proto/eJulkCYNeOETMWS0uNjSJ2/Controle-de-estoque---Wireframe?node-id=1-790&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A790)
 
 O editor de código foi escolhido porque ele possui uma integração com o
 sistema de versão. As ferramentas de comunicação utilizadas possuem
