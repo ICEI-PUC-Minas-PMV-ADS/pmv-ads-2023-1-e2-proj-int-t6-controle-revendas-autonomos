@@ -60,7 +60,7 @@ Os artefatos do projeto serão desenvenvolvidos a partir das plataformas GitHub,
 |Ambiente     | Plataforma  |Link de acesso |
 |-------|-------------------------|----|
 | Repositório de código fonte | GitHub | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t6-controle-revendas-autonomos |
-| Design de Interfaces | Figma | https://www.figma.com/file/OsDvmS0TO0tMUIKvmhWDsk/Found-Pets?node-id=0%3A1 |
+| Design de Interfaces | Figma | [https://www.figma.com/file/OsDvmS0TO0tMUIKvmhWDsk/Found-Pets?node-id=0%3A1 ](https://www.figma.com/proto/eJulkCYNeOETMWS0uNjSJ2/Controle-de-estoque---Wireframe?node-id=1-790&starting-point-node-id=1%3A790)|
 | Gerenciamento do Projeto | GitHub | [https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/189 ](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/246)|
 | Comunicação e Reuniões | Microsoft Teams |  |
 | Feramenta de Desenvolvimento | Visual Studio Code|  |
