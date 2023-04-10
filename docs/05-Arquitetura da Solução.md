@@ -12,7 +12,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de
 
 ## Modelo ER (Projeto Conceitual)
 
-![Projeto Conceitual](img/DER Projeto.png)
+![Projeto Conceitual](img/DER%20Projeto.png)
 
 ## Projeto da Base de Dados
 
