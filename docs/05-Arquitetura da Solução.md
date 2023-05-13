@@ -5,27 +5,30 @@
 
 ![Persona 2](img/Diagramadeclasse.JPG)
 
-https://lucid.app/lucidchart/7ae6f812-9413-473d-8192-f4cf7a00946b/edit?viewport_loc=-158%2C-55%2C2560%2C1278%2C0_0&invitationId=inv_36d95b9d-0834-4bf8-ae2c-3611f1d7bbed
+
 
 ## Modelo ER (Projeto Conceitual)
 
-![Projeto Conceitual](img/DER%20Projeto.png)
+![Projeto Conceitual](img/ModeloConceitual.png)
+
+
 
 ## Projeto da Base de Dados
 
 
-|![Projeto1](img/ProjetoBD1.jpeg)|
-|-----------------------|
-|-----------------------|
-|![Projeto2](img/ProjetoBD2.jpeg)|
+![Projeto1](img/BaseDeDados.png)
+
 
 
 
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+Diagrama de Classe e base de dados desenvolvidos em: [Lucidchart](https://www.lucidchart.com/pages/)
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+
+Modelo conceitual do banco de dados desenvolvido em: [Creately](https://creately.com/pt/home/)
+
+
 
 ## Hospedagem
 
