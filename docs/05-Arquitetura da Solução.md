@@ -29,14 +29,15 @@ Diagrama de Classe e base de dados desenvolvidos em: [Lucidchart](https://www.lu
 Modelo conceitual do banco de dados desenvolvido em: [Creately](https://creately.com/pt/home/)
 
 
+Hospedagem em: [Vercel](https://vercel.com/)
+
+
+Banco de Dados / PostgresSQL desenvolvido em: [Vercel](https://vercel.com/storage/postgres)
+
+
+Front-Enf desenvolvido em: [React](https://react.dev/)
+
 
 ## Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foi feita.
-
-> **Links Úteis**:
->
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
+Acesse aqui e veja o [nosso projeto hospedado](https://pmv-ads-2023-1-e2-proj-int-t6-controle-revendas-autonomos.vercel.app/)
