@@ -43,20 +43,21 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| O site deve permitir ao usuário (microempresa/autonômo) dados do estoque e compartilhar-o | ALTA | 
+|RF-001| O site deve permitir ao usuário (microempresa/autonômo) dados do estoque | ALTA | 
 |RF-002| O site deve permitir o cliente gerenciar o estoque ( cadastrar novo produto, alterar produto, remover produto)  | ALTA |
-|RF-003| O sistema deve permitir o gerenciamento do perfil ( alterar dados do perfil )  | ALTA |
+|RF-003| O sistema deve permitir o gerenciamento do perfil ( alterar dados do perfil )  | MÉDIA |
 |RF-004| O site deve permitir o cliente gerenciar os dados do fornecedor  | MÉDIA |
-|RF-005| O sistema deve permitir a emissão de um relatório geral do estoque  | MÉDIO |
 |RF-006| O sistema deve permitir a emissão de um relatório reposição de estoque  | MÉDIA |
 |RF-007| O sistema deve verificar login válido  | MÉDIA |
+|RF-003| O sistema deve permitir o gerenciamento do perfil ( alterar dados do perfil ) | BAIXA |
+|RF-005| O sistema deve permitir a emissão de um relatório geral do estoque | BAIXA |
 
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O site deve ser publicado em um ambiente acessível publicamente na Internet (Repl.it, GitHub Pages, Heroku) | MÉDIA | 
+|RNF-001| O site deve ser publicado em um ambiente acessível publicamente na Internet | MÉDIA | 
 |RNF-002| O site deverá ser responsivo permitindo a visualização em um celular de forma adequada |  ALTA |
 |RNF-003| O site deve ter bom nível de contraste entre os elementos da tela em conformidade  |  MÉDIA | 
 |RNF-004| O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge) |  ALTA | 
@@ -79,4 +80,4 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 ## Vídeo - Apresentação
 
-[![Watch the video](https://youtu.be/bnuPUccGhoY.jpg)](https://youtu.be/bnuPUccGhoY)
+[Clique aqui e assista o vídeo](https://youtu.be/bnuPUccGhoY.jpg)
