@@ -29,27 +29,27 @@ O sistema deve ser capaz de verificar se o login é valido ou invalido
 
 -	Caso o usuário tenha colocado os dados corretamente o login será validado e o usuário será redirecionado para a página inicial com o login feito
 
-## CT-02 - Visualizar dados de estoque e compartilhar
+## CT-02 - Visualizar dados de estoque 
 
 ### Requisitos Associados
-- RF-02 O site deve permitir ao usuário (microempresa/autônomo) ver os dados do estoque e compartilha-o.
+- RF-02 O site deve permitir ao usuário (microempresa/autônomo) ver os dados do estoque.
 
 
 ### Objetivo do Teste
-Objetivo do Teste	Verificar os dados do estoque e verificar se é possível o compartilhamento do estoque.  
+Objetivo do Teste	Verificar os dados do estoque é confirmar a visualização do estoque ao cliente.  
 
 ### Passos
 1) Acessar o Navegador
-2) informar o endereço do Site
-3) A empresa/autônomo deve ser cadastrada no site e estar com o login feito
-4) A empresa/autônomo deve ter produtos no estoque
+2) Informar o endereço do Site
+3) A empresa/autônomo deve ser cadastrada no site e estar com o login feito.
+4) A empresa/autônomo deve ter produtos no estoque.
 
 
 
 ### Critérios de Êxito
-- Se a empresa/autônomo não tiver produtos no estoque não será possível ver os dados e compartilhar tal
+- Se a empresa/autônomo não tiver produtos no estoque não será possível ver os dados
 
--	Se a empresa/autônomo tiver os produtos os dados iram aparecer e o compartilhamento irá funcionar corretamente
+-	Se a empresa/autônomo tiver os produtos os dados irá aparecer para visualização
 
 ## CT-03 – Gerenciar o estoque como um todo
 
@@ -77,29 +77,6 @@ Verificar se o cadastro de produto está funcionando, assim como alterar as info
 
 
 
-## CT-04 – Gerenciar perfil
-
-### Requisitos Associados
-- RF-04 O sistema deve permitir o gerenciamento do perfil ( alterar dados do perfil )
-
-
-### Objetivo do Teste
-O objetivo deste teste é tornar possível a alteração dos dados do perfil do usuário 
-
-### Passos
-1) Acessar o Navegador
-2) informar o endereço do Site
-3) A empresa/autônomo deve ser cadastrada no site e estar com o login feito
-4) clicar no perfil da empresa/autônomo
-5) Clicar em “Alterar dados”
-6) Alterar os dados e depois clicar em “Salvar”
-
-
-
-### Critérios de Êxito
-- Se o usuário deixar alguma informação que seja necessária sem preencher as alterações não serão possíveis (vai aparecer um aviso para que preencha o que falta)
-
--	Caso o usuário preencha tudo corretamente basta que ele clique em “Salvar” assim todas as suas alterações feitas serão salvas e vão aparecer no seu perfil logo em seguida
 
 ## CT-05 – Gerenciar dados do fornecedor 
 
@@ -143,6 +120,7 @@ Verificar se o relatório está sendo gerado corretamente
 
 -	Caso a empresa/autônomo tenha produtos em seu estoque e clique em emitir relatório geral um pop-up irá abrir com o relatório pronto para ser impresso
 
+
 ## CT-07 – Emissão do relatório de reposição
 
 ### Requisitos Associados
@@ -168,3 +146,56 @@ Verificar se o relatório de reposição está sendo emitido
 
 
 
+
+
+# Plano de Testes de Software - Etapa 04
+
+
+## CT-02 - Compartilhar produtos presentes no estoque
+
+### Requisitos Associados
+- RF-02 O site deve permitir ao usuário (microempresa/autônomo) ver os dados do estoque e compartilha-o.
+
+
+### Objetivo do Teste
+Objetivo do Teste Verificar os dados do estoque e verificar se é possível o compartilhamento do estoque.
+
+
+### Passos
+1) Acessar o Navegador
+2) Informar o endereço do Site
+3) A empresa/autônomo deve ser cadastrada no site e estar com o login feito.
+4) A empresa/autônomo deve ter produtos no estoque.
+
+
+
+### Critérios de Êxito
+- Se a empresa/autônomo não tiver produtos no estoque não será possível ver os dados e compartilhar tal
+
+-	Se a empresa/autônomo tiver os produtos os dados irá aparecer para visualização e o compartilhamento irá funcionar corretamente
+
+
+
+## CT-04 – Gerenciar perfil
+
+### Requisitos Associados
+- RF-04 O sistema deve permitir o gerenciamento do perfil ( alterar dados do perfil )
+
+
+### Objetivo do Teste
+O objetivo deste teste é tornar possível a alteração dos dados do perfil do usuário 
+
+### Passos
+1) Acessar o Navegador
+2) informar o endereço do Site
+3) A empresa/autônomo deve ser cadastrada no site e estar com o login feito
+4) clicar no perfil da empresa/autônomo
+5) Clicar em “Alterar dados”
+6) Alterar os dados e depois clicar em “Salvar”
+
+
+
+### Critérios de Êxito
+- Se o usuário deixar alguma informação que seja necessária sem preencher as alterações não serão possíveis (vai aparecer um aviso para que preencha o que falta)
+
+-	Caso o usuário preencha tudo corretamente basta que ele clique em “Salvar” assim todas as suas alterações feitas serão salvas e vão aparecer no seu perfil logo em seguida
