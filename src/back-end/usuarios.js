@@ -1,5 +1,8 @@
+import { authOptions } from '@/app/api/auth/[...nextauth]/route'
 import { sql } from '@vercel/postgres'
 import bcrypt from 'bcryptjs'
+import { getServerSession } from 'next-auth'
+import { NextResponse } from 'next/server'
 
 const cadastrar = async ({ nome, email, senha }) => {
   const novoUsuario = { nome, email }
@@ -17,10 +20,27 @@ const cadastrar = async ({ nome, email, senha }) => {
   return novoUsuario
 }
 
+const buscarId = async () => {
+  const session = await getServerSession(authOptions)
+
+  const { id } = await buscarPorEmail(session.user.email)
+
+  return id
+}
+
 const buscarPorId = async (id) => {
   const { rows } = await sql`
     SELECT id, nome, email FROM usuario
     WHERE id = ${id};
+  `
+
+  return rows[0]
+}
+
+const buscarPorEmail = async (email) => {
+  const { rows } = await sql`
+    SELECT id, nome, email FROM usuario
+    WHERE email = ${email};
   `
 
   return rows[0]
@@ -60,7 +80,7 @@ const autenticar = async ({ email, senha }) => {
   `
 
   const usuario = rows[0]
-  console.log(usuario, email, senha)
+
   const senhaValida = usuario && (await bcrypt.compare(senha, usuario.senha))
 
   if (!usuario || !senhaValida) {
@@ -75,4 +95,13 @@ const autenticar = async ({ email, senha }) => {
   }
 }
 
-export { cadastrar, buscarPorId, listar, alterar, excluir, autenticar }
+export {
+  buscarId,
+  cadastrar,
+  buscarPorId,
+  buscarPorEmail,
+  listar,
+  alterar,
+  excluir,
+  autenticar,
+}

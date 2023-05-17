@@ -11,7 +11,7 @@ export default function ProdutosComBaixoEstoque({ produtos }) {
           </p>
         </div>
       </div>
-      <div className='flow-root mt-8'>
+      <div className='mt-8 flow-root'>
         <div className='-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8'>
           <div className='inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8'>
             <table className='min-w-full divide-y divide-gray-300'>
@@ -46,16 +46,16 @@ export default function ProdutosComBaixoEstoque({ produtos }) {
               <tbody className='divide-y divide-gray-200'>
                 {produtos.map((produto) => (
                   <tr key={produto.codigo}>
-                    <td className='py-4 pl-4 pr-3 text-sm font-medium text-gray-900 whitespace-nowrap sm:pl-0'>
+                    <td className='whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0'>
                       {produto.nome}
                     </td>
                     <td className='px-3 py-4 text-sm text-gray-500 '>
                       {produto.descricao}
                     </td>
-                    <td className='px-3 py-4 text-sm text-gray-500 whitespace-nowrap'>
+                    <td className='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>
                       {produto.nome_fornecedor}
                     </td>
-                    <td className='px-3 py-4 text-sm text-gray-500 whitespace-nowrap'>
+                    <td className='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>
                       {produto.quantidade}
                     </td>
                   </tr>

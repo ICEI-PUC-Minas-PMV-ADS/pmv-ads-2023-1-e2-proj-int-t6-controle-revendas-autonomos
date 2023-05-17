@@ -20,9 +20,9 @@ const authOptions = {
         const resultado = await autenticar({ email, senha })
 
         if (resultado.success) {
-          const { id, nome } = resultado
+          const { id, nome: name } = resultado
 
-          return { id, nome, email }
+          return { id, name, email }
         }
 
         return null
@@ -30,7 +30,7 @@ const authOptions = {
     }),
   ],
   pages: {
-    signIn: '/signin',
+    signIn: '/login',
   },
   callbacks: {
     async session({ session, token, user }) {

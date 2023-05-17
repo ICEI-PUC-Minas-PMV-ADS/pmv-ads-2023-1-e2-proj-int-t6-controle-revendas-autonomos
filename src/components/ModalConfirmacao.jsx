@@ -1,9 +1,9 @@
 'use client'
 
+import { Button } from './Button'
 import { Dialog, Transition } from '@headlessui/react'
 import { ExclamationTriangleIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Fragment } from 'react'
-import { Button } from './Button'
 
 export function ModalConfirmacao({
   title,
@@ -25,11 +25,11 @@ export function ModalConfirmacao({
           leaveFrom='opacity-100'
           leaveTo='opacity-0'
         >
-          <div className='fixed inset-0 transition-opacity bg-opacity-50 backdrop-blur-sm bg-gray-50' />
+          <div className='fixed inset-0 bg-gray-50 bg-opacity-50 backdrop-blur-sm transition-opacity' />
         </Transition.Child>
 
         <div className='fixed inset-0 z-10 overflow-y-auto'>
-          <div className='flex items-end justify-center min-h-full p-4 text-center sm:items-center sm:p-0'>
+          <div className='flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0'>
             <Transition.Child
               as={Fragment}
               enter='ease-out duration-300'
@@ -39,19 +39,19 @@ export function ModalConfirmacao({
               leaveFrom='opacity-100 translate-y-0 sm:scale-100'
               leaveTo='opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95'
             >
-              <Dialog.Panel className='relative px-4 pt-5 pb-4 overflow-hidden text-left transition-all transform bg-white shadow-xl ring-gray-400/5 ring-1 rounded-xl sm:my-8 sm:w-full sm:max-w-lg sm:p-6'>
-                <div className='absolute top-0 right-0 hidden pt-4 pr-4 sm:block'>
+              <Dialog.Panel className='relative transform overflow-hidden rounded-xl bg-white px-4 pb-4 pt-5 text-left shadow-xl ring-1 ring-gray-400/5 transition-all sm:my-8 sm:w-full sm:max-w-lg sm:p-6'>
+                <div className='absolute right-0 top-0 hidden pr-4 pt-4 sm:block'>
                   <button
                     type='button'
-                    className='text-gray-400 bg-white rounded-xl hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-50 focus:ring-offset-2'
+                    className='rounded-xl bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-50 focus:ring-offset-2'
                     onClick={() => setOpen(false)}
                   >
-                    <XMarkIcon className='w-6 h-6' />
+                    <XMarkIcon className='h-6 w-6' />
                   </button>
                 </div>
                 <div className='sm:flex sm:items-start'>
-                  <div className='flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto bg-red-100 rounded-full sm:mx-0 sm:h-10 sm:w-10'>
-                    <ExclamationTriangleIcon className='w-6 h-6 text-red-600' />
+                  <div className='mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10'>
+                    <ExclamationTriangleIcon className='h-6 w-6 text-red-600' />
                   </div>
                   <div className='mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left'>
                     <Dialog.Title
@@ -65,7 +65,7 @@ export function ModalConfirmacao({
                     </div>
                   </div>
                 </div>
-                <div className='gap-4 mt-5 space-x-8 sm:mt-4 sm:flex sm:flex-row-reverse'>
+                <div className='mt-5 gap-4 space-x-8 sm:mt-4 sm:flex sm:flex-row-reverse'>
                   <Button
                     variant='destructive'
                     onClick={primaryAction.action}

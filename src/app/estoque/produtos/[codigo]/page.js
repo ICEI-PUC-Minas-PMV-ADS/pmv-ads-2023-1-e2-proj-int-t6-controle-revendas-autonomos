@@ -1,7 +1,7 @@
-import { buscarPorCodigo } from '@/back-end/produtos'
-import { DetailPage } from '@/components/DetailPage'
 import { FormProduto } from '../FormProduto'
 import { atualizarProduto } from '../_actions'
+import { buscarPorCodigo } from '@/back-end/produtos'
+import { DetailPage } from '@/components/DetailPage'
 
 export const dynamic = 'force-dynamic'
 export const revalidate = 0

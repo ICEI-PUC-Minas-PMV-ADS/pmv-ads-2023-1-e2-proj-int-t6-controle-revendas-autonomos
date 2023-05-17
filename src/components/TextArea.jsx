@@ -12,7 +12,7 @@ export const TextArea = ({ label, name, erro, ...props }) => (
       <textarea
         name={name}
         id={name}
-        className={`block drop-shadow-sm bg-gray-50 w-full rounded-xl border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-100 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-amber-300/50 sm:text-sm sm:leading-6  ${
+        className={`block w-full rounded-xl border-0 bg-gray-50 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-100 drop-shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-amber-300/50 sm:text-sm sm:leading-6  ${
           erro ? 'ring-red-300' : ''
         }`}
         {...props}

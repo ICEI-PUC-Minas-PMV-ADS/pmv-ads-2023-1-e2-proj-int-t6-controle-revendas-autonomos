@@ -1,7 +1,7 @@
 export const DetailPage = ({ children, title, subtitle }) => (
-  <div className='max-w-2xl px-4 mx-auto sm:px-6 lg:px-8'>
+  <div className='mx-auto max-w-2xl px-4 sm:px-6 lg:px-8'>
     <div className='md:flex md:items-center md:justify-between'>
-      <div className='flex-1 min-w-0'>
+      <div className='min-w-0 flex-1'>
         {title && <Title title={title} />}
         {subtitle && <Subtitle subtitle={subtitle} />}
         {children}

@@ -10,14 +10,14 @@ export const ListaDeProdutos = ({ produtos }) => (
           <Link
             key={codigo}
             href={`/estoque/produtos/${codigo}`}
-            className='relative flex justify-between px-4 py-5 gap-x-6 hover:bg-gray-50 sm:px-6'
+            className='relative flex justify-between gap-x-6 px-4 py-5 hover:bg-gray-50 sm:px-6'
           >
-            <div className='flex-auto min-w-0'>
+            <div className='min-w-0 flex-auto'>
               <p className='text-sm font-semibold leading-6 text-gray-900'>
-                <span className='absolute inset-x-0 bottom-0 -top-px' />
+                <span className='absolute inset-x-0 -top-px bottom-0' />
                 {nome}
               </p>
-              <p className='flex mt-1 text-xs leading-5 text-gray-500'>
+              <p className='mt-1 flex text-xs leading-5 text-gray-500'>
                 {nome_fornecedor}
               </p>
             </div>
@@ -33,7 +33,7 @@ export const ListaDeProdutos = ({ produtos }) => (
                   {quantidade} em estoque
                 </p>
               </div>
-              <ChevronRightIcon className='flex-none w-5 h-5 text-gray-400' />
+              <ChevronRightIcon className='h-5 w-5 flex-none text-gray-400' />
             </div>
           </Link>
         </li>

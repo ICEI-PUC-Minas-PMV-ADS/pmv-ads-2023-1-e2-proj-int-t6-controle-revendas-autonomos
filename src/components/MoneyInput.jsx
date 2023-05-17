@@ -1,7 +1,7 @@
 'use client'
 
-import { NumericFormat } from 'react-number-format'
 import { useState } from 'react'
+import { NumericFormat } from 'react-number-format'
 
 const MoneyInput = ({ label, name, defaultValue = '', erro, ...props }) => {
   const valorInicialNumerico =
@@ -18,8 +18,8 @@ const MoneyInput = ({ label, name, defaultValue = '', erro, ...props }) => {
       </label>
 
       <div className='relative mt-2'>
-        <div className='absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none'>
-          <span className='text-gray-500 sm:text-sm drop-shadow-sm'>R$</span>
+        <div className='pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3'>
+          <span className='text-gray-500 drop-shadow-sm sm:text-sm'>R$</span>
         </div>
 
         <CurrencyInput
@@ -57,7 +57,7 @@ const CurrencyInput = ({ label, name, value, onChange, erro, ...props }) => {
       allowNegative={false}
       onValueChange={handleValueChange}
       {...props}
-      className={`block bg-gray-50 shadow-sm  w-full rounded-xl border-0 py-1.5 pl-9 pr-12 text-gray-900 ring-1 ring-inset ring-gray-100 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-amber-300/50 sm:text-sm sm:leading-6 invalid:border-red-600 ${
+      className={`block w-full rounded-xl  border-0 bg-gray-50 py-1.5 pl-9 pr-12 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-100 placeholder:text-gray-400 invalid:border-red-600 focus:ring-2 focus:ring-inset focus:ring-amber-300/50 sm:text-sm sm:leading-6 ${
         erro ? 'ring-red-300' : ''
       }`}
     />

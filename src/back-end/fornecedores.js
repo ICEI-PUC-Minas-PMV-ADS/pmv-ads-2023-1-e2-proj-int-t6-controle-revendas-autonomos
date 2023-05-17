@@ -1,11 +1,11 @@
 import { sql } from '@vercel/postgres'
 
-const cadastrar = async ({ nome }) => {
-  const novoFornecedor = { nome }
+const cadastrar = async ({ nome, usuario }) => {
+  const novoFornecedor = { nome, usuario }
 
   const { rows } = await sql`
-    INSERT INTO fornecedor (nome)
-    VALUES (${nome})
+    INSERT INTO fornecedor (nome, usuario)
+    VALUES (${nome}, ${usuario})
     RETURNING codigo
   `
 
@@ -23,9 +23,10 @@ const buscarPorCodigo = async (codigo) => {
   return rows[0]
 }
 
-const listar = async () => {
+const listar = async (usuario) => {
   const { rows } = await sql`
     SELECT * FROM fornecedor
+    WHERE usuario = ${usuario}
     ORDER BY nome;
   `
 

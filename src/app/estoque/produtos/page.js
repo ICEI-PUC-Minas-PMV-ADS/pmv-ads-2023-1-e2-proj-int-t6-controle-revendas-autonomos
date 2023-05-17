@@ -1,15 +1,17 @@
+import { ListaDeProdutos } from './ListaProdutos'
 import { listar as getProdutos } from '@/back-end/produtos'
+import { buscarId } from '@/back-end/usuarios'
+import { Button } from '@/components/Button'
+import { PageHeader } from '@/components/PageHeader'
 import { PlusIcon } from '@heroicons/react/20/solid'
 import { FolderPlusIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
-import { ListaDeProdutos } from './ListaProdutos'
-import { PageHeader } from '@/components/PageHeader'
-import { Button } from '@/components/Button'
 
 export const revalidate = 1
 
 export default async function Produtos() {
-  const produtos = await getProdutos()
+  const usuario = await buscarId()
+  const produtos = await getProdutos(usuario)
 
   return (
     <>
@@ -37,14 +39,14 @@ const EstadoVazio = () => (
   <Link href='/estoque/produtos/novo'>
     <button
       type='button'
-      className='relative block w-full p-12 text-center border-2 border-gray-300 border-dashed rounded-xl hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-300/50'
+      className='relative block w-full rounded-xl border-2 border-dashed border-gray-300 p-12 text-center hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-amber-300/50 focus:ring-offset-2'
     >
-      <FolderPlusIcon className='w-12 h-12 mx-auto text-gray-400' />
-      <span className='block mt-2 text-sm font-semibold text-gray-600'>
+      <FolderPlusIcon className='mx-auto h-12 w-12 text-gray-400' />
+      <span className='mt-2 block text-sm font-semibold text-gray-600'>
         Você ainda não tem produtos cadastrados
         <br />
       </span>
-      <span className='block mt-2 text-xs font-semibold text-gray-500'>
+      <span className='mt-2 block text-xs font-semibold text-gray-500'>
         Clique aqui para cadastrar o primeiro
       </span>
     </button>

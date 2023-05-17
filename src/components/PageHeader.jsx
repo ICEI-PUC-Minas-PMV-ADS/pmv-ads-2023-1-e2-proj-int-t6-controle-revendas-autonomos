@@ -1,6 +1,6 @@
 export const PageHeader = ({ children, title, subtitle }) => (
   <header className='md:flex md:items-center md:justify-between'>
-    <div className='flex-1 min-w-0'>
+    <div className='min-w-0 flex-1'>
       {title && <PageTitle>{title}</PageTitle>}
       {subtitle && <PageSubtitle>{subtitle}</PageSubtitle>}
     </div>
@@ -15,5 +15,5 @@ const PageTitle = ({ children }) => (
 )
 
 const PageSubtitle = ({ children }) => (
-  <p className='mt-3 text-gray-500 text-md'>{children}</p>
+  <p className='text-md mt-3 text-gray-500'>{children}</p>
 )

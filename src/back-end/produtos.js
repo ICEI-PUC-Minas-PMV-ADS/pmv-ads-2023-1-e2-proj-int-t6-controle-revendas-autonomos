@@ -7,8 +7,17 @@ const cadastrar = async ({
   preco,
   custo,
   quantidade,
+  usuario,
 }) => {
-  const novoProduto = { nome, descricao, fornecedor, preco, custo, quantidade }
+  const novoProduto = {
+    nome,
+    descricao,
+    fornecedor,
+    preco,
+    custo,
+    quantidade,
+    usuario,
+  }
 
   const precoNumerico = brlToFloat(preco)
   const custoNumerico = brlToFloat(custo)
@@ -24,14 +33,16 @@ const cadastrar = async ({
         fornecedor,
         preco,
         custo,
-        quantidade)
+        quantidade,
+        usuario)
       VALUES (
         ${nome},
         ${descricao},
         ${fornecedor},
         ${precoNumerico},
         ${custoNumerico},
-        ${quantidade})
+        ${quantidade},
+        ${usuario})
       RETURNING codigo
     `
 
@@ -51,11 +62,12 @@ const buscarPorCodigo = async (codigo) => {
   return rows[0]
 }
 
-const listar = async () => {
+const listar = async (usuario) => {
   const { rows } = await sql`
     SELECT p.*, f.nome as nome_fornecedor
     FROM produto p
     LEFT JOIN fornecedor f ON p.fornecedor = f.codigo
+    WHERE p.usuario = ${usuario}
     ORDER BY p.nome;
   `
 
@@ -145,7 +157,8 @@ const buscarPorFornecedor = async (fornecedor) => {
     SELECT p.*, f.nome as nome_fornecedor
     FROM produto p
     LEFT JOIN fornecedor f ON p.fornecedor = f.codigo
-    WHERE f.codigo = ${fornecedor};
+    WHERE
+        f.codigo = ${fornecedor};
   `
 
   return rows
