@@ -1,4 +1,5 @@
 'use client'
+
 import { classNames } from '@/utils/class-names'
 import { Menu, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
@@ -6,9 +7,9 @@ import { Fragment } from 'react'
 const ProfileDropdown = ({ signOut }) => (
   <Menu as='div' className='relative ml-3'>
     <div>
-      <Menu.Button className='flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-300/50'>
+      <Menu.Button className='flex rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-amber-300/50 focus:ring-offset-2'>
         <svg
-          className='w-10 h-10 p-2 rounded-full stroke-gray-600 hover:stroke-gray-700 hover:bg-gray-100 hover:drop-shadow-sm'
+          className='h-10 w-10 rounded-full stroke-gray-600 p-2 hover:bg-gray-100 hover:stroke-gray-700 hover:drop-shadow-sm'
           xmlns='http://www.w3.org/2000/svg'
           fill='none'
           viewBox='0 0 24 24'
@@ -33,7 +34,7 @@ const ProfileDropdown = ({ signOut }) => (
       leaveFrom='transform opacity-100 scale-100'
       leaveTo='transform opacity-0 scale-95'
     >
-      <Menu.Items className='absolute right-0 z-10 w-48 py-1 mt-2 origin-top-right bg-white shadow-lg rounded-xl ring-1 ring-black ring-opacity-5 focus:outline-none'>
+      <Menu.Items className='absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-xl bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'>
         <Menu.Item>
           {({ active }) => (
             <a
@@ -50,7 +51,8 @@ const ProfileDropdown = ({ signOut }) => (
 
         <Menu.Item>
           {({ active }) => (
-            <button
+            <a
+              href='#'
               onClick={() => signOut()}
               className={classNames(
                 active ? 'bg-gray-100' : '',
@@ -58,7 +60,7 @@ const ProfileDropdown = ({ signOut }) => (
               )}
             >
               Sair
-            </button>
+            </a>
           )}
         </Menu.Item>
       </Menu.Items>

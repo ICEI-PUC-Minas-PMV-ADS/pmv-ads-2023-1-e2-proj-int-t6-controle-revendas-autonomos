@@ -1,11 +1,14 @@
 'use server'
 
 import * as fornecedores from '@/back-end/fornecedores'
+import { buscarId } from '@/back-end/usuarios'
 import { revalidatePath } from 'next/cache'
 import { redirect } from 'next/navigation'
 
 async function cadastrarFornecedor(formData) {
   const dados = Object.fromEntries(formData)
+
+  dados.usuario = await buscarId()
 
   await fornecedores.cadastrar(dados)
 

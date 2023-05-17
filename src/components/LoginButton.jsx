@@ -1,11 +1,16 @@
 'use client'
 
-import { signIn, signOut, useSession } from 'next-auth/react'
 import { Button } from './Button'
 import { ProfileDropdown } from './ProfileDropdown'
+import { Spinner } from './Spinner'
+import { signIn, signOut, useSession } from 'next-auth/react'
 
-const LoginButton = () => {
-  const { data: session } = useSession()
+const LoginProfileButton = () => {
+  const { data: session, status } = useSession()
+
+  if (status === 'loading') {
+    return <Spinner />
+  }
 
   if (session) {
     return <ProfileDropdown signOut={signOut} />
@@ -18,4 +23,4 @@ const LoginButton = () => {
   )
 }
 
-export { LoginButton }
+export { LoginProfileButton }

@@ -1,5 +1,6 @@
 'use client'
 
+import { Input } from '@/components/Input'
 import { Spinner } from '@/components/Spinner'
 import { classNames } from '@/utils/class-names'
 import { Combobox } from '@headlessui/react'
@@ -15,7 +16,7 @@ const FornecedorCombobox = ({ codigo }) => {
     data: fornecedores,
     error,
     isLoading,
-  } = useSWR('/api/1/fornecedores/', fetcher)
+  } = useSWR('/api/fornecedores/', fetcher)
 
   const fornecedoresFiltrados =
     termoBusca === '' && fornecedores
@@ -50,17 +51,17 @@ const FornecedorCombobox = ({ codigo }) => {
         >
           <div className='relative mt-2'>
             <Combobox.Input
-              className='w-full rounded-xl border-0  py-1.5 pl-3 pr-10 text-gray-900 drop-shadow-sm ring-1 ring-inset ring-gray-100 focus:ring-2 focus:ring-inset bg-gray-50 focus:ring-amber-300/50 sm:text-sm sm:leading-6'
+              className='w-full rounded-xl border-0  bg-gray-50 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-100 drop-shadow-sm focus:ring-2 focus:ring-inset focus:ring-amber-300/50 sm:text-sm sm:leading-6'
               onChange={(event) => setTermoBusca(event.target.value)}
               displayValue={(fornecedor) => nomeFornecedorSelecionado}
             />
 
-            <Combobox.Button className='absolute inset-y-0 right-0 flex items-center px-2 rounded-r-md focus:outline-none'>
-              <ChevronUpDownIcon className='w-5 h-5 text-gray-400' />
+            <Combobox.Button className='absolute inset-y-0 right-0 flex items-center rounded-r-md px-2 focus:outline-none'>
+              <ChevronUpDownIcon className='h-5 w-5 text-gray-400' />
             </Combobox.Button>
 
             {fornecedoresFiltrados?.length > 0 && (
-              <Combobox.Options className='absolute z-10 w-full py-1 mt-1 overflow-auto text-base bg-white drop-shadow-lg rounded-xl max-h-60 ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm'>
+              <Combobox.Options className='absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-xl bg-white py-1 text-base ring-1 ring-black ring-opacity-5 drop-shadow-lg focus:outline-none sm:text-sm'>
                 {fornecedoresFiltrados.map(({ codigo, nome }) => (
                   <Combobox.Option
                     key={codigo}
@@ -82,7 +83,7 @@ const FornecedorCombobox = ({ codigo }) => {
                         >
                           {`${nome} `}
 
-                          <span class='align-super text-xs font-semibold'>
+                          <span className='align-super text-xs font-semibold'>
                             {codigo}
                           </span>
                         </span>
@@ -93,7 +94,7 @@ const FornecedorCombobox = ({ codigo }) => {
                               'absolute inset-y-0 right-0 flex items-center pr-4'
                             )}
                           >
-                            <CheckIcon className='w-5 h-5 stroke-1 stroke-amber-600' />
+                            <CheckIcon className='h-5 w-5 stroke-amber-600 stroke-1' />
                           </span>
                         )}
                       </>
@@ -115,13 +116,13 @@ const Label = () => (
     className='block text-sm font-medium leading-6 text-gray-900 drop-shadow-sm'
   >
     Fornecedor
-    <span class='align-super text-xs font-semibold'>{'\t id'}</span>
+    <span className='align-super text-xs font-semibold'>{'\t id'}</span>
   </label>
 )
 
 const Carregando = () => (
   <>
-    <div className='mt-2 text-xs subpixel-antialiased text-gray-500 sm:text-sm drop-shadow-sm'>
+    <div className='mt-2 text-xs text-gray-500 subpixel-antialiased drop-shadow-sm sm:text-sm'>
       <Spinner /> Carregando fornecedores...
     </div>
   </>

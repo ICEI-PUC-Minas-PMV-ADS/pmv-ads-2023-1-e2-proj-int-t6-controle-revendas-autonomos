@@ -7,7 +7,8 @@ import { useSearchParams } from 'next/navigation'
 
 const Signin = () => {
   const searchParams = useSearchParams()
-  const callbackUrl = searchParams.get('callbackUrl')
+  const callbackUrl = searchParams.get('callbackUrl') || '/estoque'
+  const contaCriada = searchParams.get('conta-criada') == 'true'
 
   const entrar = (event) => {
     event.preventDefault()
@@ -24,9 +25,14 @@ const Signin = () => {
 
   return (
     <>
-      <div className='flex flex-col justify-center flex-1 min-h-full px-6 py-12 lg:px-8'>
+      <div className='flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8'>
         <div className='sm:mx-auto sm:w-full sm:max-w-sm'>
-          <h2 className='mt-10 text-2xl font-bold leading-9 tracking-tight text-center text-gray-600 drop-shadow-sm'>
+          {contaCriada && (
+            <p className='text-center text-sm font-semibold text-green-600'>
+              Conta criada com sucesso!
+            </p>
+          )}
+          <h2 className='mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-600 drop-shadow-sm'>
             Acesse sua conta
           </h2>
         </div>
@@ -53,12 +59,12 @@ const Signin = () => {
             </div>
           </form>
 
-          <p className='w-full mx-auto mt-10 mb-2 text-sm text-center text-gray-500 '>
+          <p className='mx-auto mb-2 mt-10 w-full text-center text-sm text-gray-500 '>
             Ainda não é um membro?
           </p>
 
-          <Button href='#' fullWidth>
-            Crie sua conta agora mesmo, é de graça!
+          <Button href='/signup' fullWidth>
+            Crie sua conta!
           </Button>
         </div>
       </div>

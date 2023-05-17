@@ -2,14 +2,14 @@ import { redirect } from 'next/navigation'
 
 export default function redirecionar() {
   return (
-    <main className='max-w-screen-lg mx-auto text-center'>
+    <main className='mx-auto max-w-screen-lg text-center'>
       <section className='container mx-auto my-8'>
         <p className='sec-text'>Gerencie seu estoque da melhor maneira</p>
       </section>
 
       <article>
-        <div className='flex flex-wrap justify-center mx-auto my-8 text-justify container-mvsao'>
-          <div className='max-w-lg mvsao lg:mx-8'>
+        <div className='container-mvsao mx-auto my-8 flex flex-wrap justify-center text-justify'>
+          <div className='mvsao max-w-lg lg:mx-8'>
             <p className='mt-4'>
               Nossa missão é ajudar pequenas e médias empresas a gerenciar seus
               estoques de maneira mais eficiente e eficaz, permitindo que elas
@@ -22,7 +22,7 @@ export default function redirecionar() {
             </p>
           </div>
 
-          <div className='max-w-lg mvsao lg:mx-8'>
+          <div className='mvsao max-w-lg lg:mx-8'>
             <p className='mt-4'>
               Nossa visão é ser a principal referência em software de controle
               de estoque para pequenas e médias empresas em todo o mundo.

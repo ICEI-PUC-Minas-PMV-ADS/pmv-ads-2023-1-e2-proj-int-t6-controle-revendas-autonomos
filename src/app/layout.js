@@ -1,8 +1,8 @@
-import Navbar from '@/components/Navbar'
 import './globals.css'
-import { Inter } from 'next/font/google'
-import { Session as SessionProvider } from '@/components/SessionProvider'
 import { Footer } from '@/components/Footer'
+import { Navbar } from '@/components/Navbar'
+import { Session as SessionProvider } from '@/components/SessionProvider'
+import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html
-      className='h-full subpixel-antialiased bg-white scroll-smooth'
+      className='h-full scroll-smooth bg-white subpixel-antialiased'
       lang='pt-BR'
     >
       <body className={'h-full ' + inter.className}>

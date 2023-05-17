@@ -1,10 +1,10 @@
+import { FornecedorCombobox } from '../fornecedores/ComboboxFornecedores'
+import { ButtonExcluirProduto } from './[codigo]/ButtonExcluirProduto'
 import { Button } from '@/components/Button'
 import { Form } from '@/components/Form'
-import { TextArea } from '@/components/TextArea'
 import { Input } from '@/components/Input'
-import { ButtonExcluirProduto } from './[codigo]/ButtonExcluirProduto'
 import { MoneyInput } from '@/components/MoneyInput'
-import { FornecedorCombobox } from '../fornecedores/ComboboxFornecedores'
+import { TextArea } from '@/components/TextArea'
 import { PlusIcon } from '@heroicons/react/20/solid'
 
 export const FormProduto = ({
@@ -36,6 +36,18 @@ export const FormProduto = ({
     {codigo && <input type='hidden' name='codigo' value={codigo} />}
 
     <div className='sm:col-span-6'>
+      <div className='flex items-end space-x-4'>
+        <div className='grow'>
+          <FornecedorCombobox codigo={fornecedor} fornecedores={fornecedores} />
+        </div>
+        <Button href='/estoque/fornecedores/novo'>
+          <PlusIcon className='-mr-0.5 h-5 w-5' />
+          Cadastrar novo
+        </Button>
+      </div>
+    </div>
+
+    <div className='sm:col-span-6'>
       <Input
         label='Nome'
         name='nome'
@@ -53,18 +65,6 @@ export const FormProduto = ({
         rows='3'
         defaultValue={descricao || ''}
       />
-    </div>
-
-    <div className='sm:col-span-6'>
-      <div className='flex items-end space-x-4'>
-        <div className='grow'>
-          <FornecedorCombobox codigo={fornecedor} fornecedores={fornecedores} />
-        </div>
-        <Button href='/estoque/fornecedores/novo'>
-          <PlusIcon className='-mr-0.5 h-5 w-5' />
-          Cadastrar novo
-        </Button>
-      </div>
     </div>
 
     <div className='sm:col-span-2'>

@@ -21,13 +21,22 @@ Desenvolvimento de uma aplicação para controle de estoque, cadastro de lciente
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+Rodar o comando: npm install na pasta raiz.
+Após a instalação rodar npm run dev
 
-Não deixe de informar o link onde a aplicação estiver disponível para acesso (por exemplo: https://adota-pet.herokuapp.com/src/index.html).
+* Lembrando que estará sem a conexão com o banco de dados nesse caso.
+  
 
-Se houver usuário de teste, o login e a senha também deverão ser informados aqui (por exemplo: usuário - admin / senha - admin).
 
-O link e o usuário/senha descritos acima são apenas exemplos de como tais informações deverão ser apresentadas.
+[Clique aqui e veja o projeto hospedado](https://pmv-ads-2023-1-e2-proj-int-t6-controle-revendas-autonomos.vercel.app/)
+
+
+Usuário teste: joao_senha_123456@mail.com
+
+
+Senha teste: 123456
+
+
 
 # Documentação
 

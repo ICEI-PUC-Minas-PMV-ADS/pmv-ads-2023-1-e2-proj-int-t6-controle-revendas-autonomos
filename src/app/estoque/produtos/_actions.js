@@ -1,11 +1,14 @@
 'use server'
 
 import * as produtos from '@/back-end/produtos'
+import { buscarId } from '@/back-end/usuarios'
 import { revalidatePath } from 'next/cache'
 import { redirect } from 'next/navigation'
 
 async function cadastrarProduto(formData) {
   const dados = Object.fromEntries(formData)
+
+  dados.usuario = await buscarId()
 
   const resultado = await produtos.cadastrar(dados)
 

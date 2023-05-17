@@ -14,7 +14,7 @@ const Button = forwardRef(function Button(
       'text-red-800 bg-red-100 hover:bg-red-200 disabled:bg-red-900 disabled:text-red-300 focus-visible:outline-red-600',
   }
 
-  const className = `transition ease-out inline-flex justify-center w-full px-3 py-2 text-sm font-semibold rounded-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 rop-shadow-sm z-0 ${
+  const className = `transition ease-out inline-flex justify-center w-full px-3 py-2 text-sm font-semibold rounded-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 drop-shadow-sm z-0 ${
     styles[variant]
   } ${fullWidth || 'sm:w-auto'}`
 
