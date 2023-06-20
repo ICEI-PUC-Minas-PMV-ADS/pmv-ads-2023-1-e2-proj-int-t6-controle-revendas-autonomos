@@ -32,7 +32,7 @@ Conseguiu fazer cadastro de produtos? - Sim
 O que precisa melhorar? - Mais opções
 Teve alguma dificuldade? - Não
 
-Pa**rticipante: 4**
+**Participante: 4**
 
 O que achou do site? - Fácil acesso
 Foi fácil navegar? - Sim
@@ -42,7 +42,7 @@ Conseguiu fazer cadastro de produtos? - Não
 O que precisa melhorar? - Ainda sei pouco da estrutura
 Teve alguma dificuldade? - Não
 
-**Participante**: 5
+**Participante: 5**
 
 O que achou do site? - Muito eficaz
 Foi fácil navegar? - Tive um pouco de dificuldade no começo, mas consegui navegar.
@@ -52,7 +52,7 @@ Conseguiu fazer cadastro de produtos? - Sim
 O que precisa melhorar? - Na apresentação do site
 Teve alguma dificuldade? - Não. Está bem acessível às pessoas com mais ou menos instrução.
 
-**Participante**: 6
+**Participante: 6**
 
 O que achou do site? - Muito bom
 Foi fácil navegar? - Sim
@@ -62,7 +62,7 @@ Conseguiu fazer cadastro de produtos? - Não
 O que precisa melhorar? - Acredito que mais informações na tela inicial
 Teve alguma dificuldade? - Não
 
-**Participante**: 7
+**Participante: 7**
 
 O que achou do site? - Interessante
 Foi fácil navegar? - Mais ou menos
@@ -72,7 +72,7 @@ Conseguiu fazer cadastro de produtos? - Consegui
 O que precisa melhorar? - Nada, está ótimo
 Teve alguma dificuldade? - Nenhuma
 
-**Participante**: 8
+**Participante: 8**
 
 O que achou do site? - Bom
 Foi fácil navegar? - Sim
@@ -82,7 +82,7 @@ Conseguiu fazer cadastro de produtos? - Sim
 O que precisa melhorar? - Acredito que mais informações na tela inicial
 Teve alguma dificuldade? - Não
 
-**Participante**: 9
+**Participante: 9**
 
 O que achou do site? - Um pouco difícil, mas consegui o que eu queria
 Foi fácil navegar? - Mais ou menos
@@ -92,7 +92,7 @@ Conseguiu fazer cadastro de produtos? - Consegui, tive que me esforçar bastante
 O que precisa melhorar? - As letras precisam ser um pouco maiores para que pessoas como eu que têm dificuldade para enxergá-las
 Teve alguma dificuldade? - As letras precisam ser um pouco maiores para que pessoas como eu que têm dificuldade para enxergá-las
 
-**Participante**: 10
+**Participante: 10**
 
 O que achou do site? - Tem um layout bonito
 Foi fácil navegar? - Sim
