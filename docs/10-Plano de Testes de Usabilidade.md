@@ -1,6 +1,5 @@
 # Plano de Testes de Usabilidade
 
-
 ### O detalhamento dos objetivos 
 - O objetivo do teste de usabilidade é saber se todos os requisitos que foram levantados durante o projeto estão funcionando corretamente e de forma com que o usuário consiga navegar por dentro do site tranquilamente e sem dificuldades.
 
