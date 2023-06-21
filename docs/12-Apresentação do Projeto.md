@@ -6,6 +6,12 @@ Nossa missão é ajudar pequenas e médias empresas a gerenciar seus estoques de
 
 ## Identidade Visual (Marca, Design)
 
+![logo](img/logoapp.png)
+
+Tabela de Cores
+color base: #d58c00;
+background-color: #fff0c4;
+background-color: #ffe390;
 
 ## Conjunto de Slides (Estrutura)
 
