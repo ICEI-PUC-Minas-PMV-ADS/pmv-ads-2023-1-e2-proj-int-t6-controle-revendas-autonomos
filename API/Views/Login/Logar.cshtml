@@ -1,0 +1,75 @@
+﻿@model controlestoque.Models.Loginusuario
+
+@{
+    ViewData["Title"] = "Logar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .form-control
+    {
+        background-color: #f7f7f7;
+        border: 1px solid #efefef;
+    }
+    .form-control:hover
+    {
+            border: 2px solid #f5cf67;
+    }  
+
+    :focus {
+        outline: none !important;
+        -webkit-appearance: none;
+        box-shadow: none !important
+    }
+
+    .botao
+    {
+        font-weight: bold;
+        color: #d58c00;
+        padding: 5px;
+        border-width: 0px;
+        background-color: #fff0c4;
+        width: 100%;
+        display: block;
+        margin: 0px auto;
+        border-radius: 10rem;
+    }
+
+    .botao:hover
+    {
+            background: #ffe390;
+            
+    }
+</style>
+
+<h1 style="text-align: center; font-size: 1.5rem;padding-top: 10vh;">Acesse a sua conta</h1>
+
+<br />
+<div class="row" style="justify-content: center; align-items: center;">
+    <br />
+    <div class="col-md-4">
+        <form asp-action="Logar">
+            <div class="form-group">
+                <label asp-for="Email" class="control-label" style="margin-bottom: 10px;"></label>
+                <input asp-for="Email" class="form-control" autocomplete="off" placeholder="exemplo@gmail.com" required style="margin-bottom: 10px; border-radius: 10rem;" />
+            </div>
+         
+            <div class="form-group">
+                <label asp-for="Senha" class="control-label"></label>
+                <input asp-for="Senha" class="form-control" type="password" autocomplete="off" placeholder="Senha" required style="margin-bottom: 10px; margin-top: 10px; border-radius: 10rem; " />
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Entrar" class="botao"/>
+            </div>
+            <br />
+            <p style="text-align: center; font-size: 14px; color: #716e6e; margin-bottom: 1rem;">Ainda não é membro?</p>
+            <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item" style="align-self: center;">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Cadastrousuarios" asp-action="Create" style="width: 120px; text-align: center; font-size: 15px; color: gray;">Crie a sua conta!</a>
+                </li>
+
+            </ul>
+        </form>
+    </div>
+</div>

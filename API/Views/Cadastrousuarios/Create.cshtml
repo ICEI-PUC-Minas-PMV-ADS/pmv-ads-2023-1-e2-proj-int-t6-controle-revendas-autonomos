@@ -1,0 +1,119 @@
+﻿@model controlestoque.Models.Cadastrousuario
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<script type="text/javascript">
+    function confereSenha() {
+        const senha = document.querySelector('input[name=Senha]');
+        const confirma = document.querySelector('input[name=Confsenha]');
+
+        if (confirma.value === senha.value) {
+            confirma.setCustomValidity('');
+        } else {
+            confirma.setCustomValidity('As senhas não conferem')
+        }
+    }
+</script>
+
+<style>
+    .form-control {
+        background-color: #f7f7f7;
+        border: 1px solid #efefef;
+    }
+
+        .form-control:hover {
+            border: 2px solid #f5cf67;
+        }
+
+    :focus {
+        outline: none !important;
+        -webkit-appearance: none;
+        box-shadow: none !important
+    }
+
+    .botao {
+        font-weight: bold;
+        color: #d58c00;
+        padding: 5px;
+        border-width: 0px;
+        background-color: #fff0c4;
+        width: 100%;
+        display: block;
+        margin: 0px auto;
+        border-radius: 10rem;
+    }
+
+        .botao:hover {
+            background: #ffe390;
+        }
+</style>
+
+<h1 style="text-align: center; font-size: 1.5rem;">Crie sua conta</h1>
+
+<br />
+<div class="row" style="justify-content: center;">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Nome" class="control-label" style="margin-bottom: 10px;"></label>
+                <input asp-for="Nome" class="form-control" autocomplete="off" required style="margin-bottom: 10px; border-radius: 10rem;" />
+
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label" style="margin-bottom: 10px;"></label>
+                <input asp-for="Email" class="form-control" autocomplete="off" placeholder="exemplo@gmail.com" required style="margin-bottom: 10px; border-radius: 10rem;" />
+
+            </div>
+            <div class="form-group">
+                <label asp-for="Senha" class="control-label" style="margin-bottom: 10px;"></label>
+                <input asp-for="Senha" class="form-control" type="password" autocomplete="off" placeholder="Senha" required onchange='confereSenha();' style="margin-bottom: 10px; border-radius: 10rem;" />
+
+            </div>
+            <div class="form-group">
+                <label asp-for="Confsenha" class="control-label" style="margin-bottom: 10px;"></label>
+                <input asp-for="Confsenha" class="form-control" type="password" autocomplete="off" placeholder="Confirme sua senha" required onchange='confereSenha();' style="margin-bottom: 10px; border-radius: 10rem;" />
+
+            </div>
+            <div class="form-group">
+                <label asp-for="Endereco" class="control-label" style="margin-bottom: 10px;"></label>
+                <input asp-for="Endereco" class="form-control" autocomplete="off" style="margin-bottom: 10px; border-radius: 10rem;" />
+
+            </div>
+            <div class="form-group">
+                <label asp-for="Cidade" class="control-label" style="margin-bottom: 10px;"></label>
+                <input asp-for="Cidade" class="form-control" autocomplete="off" style="margin-bottom: 10px; border-radius: 10rem;" />
+
+            </div>
+            <div class="form-group">
+                <label asp-for="Descricao" class="control-label" style="margin-bottom: 10px;"></label>
+                <textarea asp-for="Descricao" class="form-control" type="message" autocomplete="off" style="height: 100px;margin-bottom: 10px; border-radius: 1rem;"></textarea>
+
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Criar conta" class="botao" />
+            </div>
+            <br />
+            <p style="text-align: center; font-size: 14px; color: #716e6e; margin-bottom: 1rem;">Já é membro?</p>
+            <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item" style="align-self: center;">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Logar" style="width: 120px; text-align: center; font-size: 15px; color: gray; margin-bottom: 10px;">Acesse sua conta</a>
+                </li>
+
+            </ul>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+
+}
